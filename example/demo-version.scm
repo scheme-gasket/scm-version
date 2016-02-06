@@ -22,3 +22,4 @@
              (let ((result (parse-version line)))
                (println result))
              (recur (get-line input)))))))
+
