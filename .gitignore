@@ -1,0 +1,8 @@
+# -*- mode: gitignore; -*-
+
+#
+*~
+\#*#
+
+installed.list
+*.log
