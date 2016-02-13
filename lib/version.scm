@@ -1,4 +1,5 @@
 (define-module (version)
+  #:use-module (srfi srfi-1)
   #:use-module (srfi srfi-9)
   #:use-module (ice-9 regex))
 
@@ -47,10 +48,10 @@
          (diff        (remove zero? (map -
                                          (version-parts left-ver)
                                          (version-parts right-ver))))
-         (first-part  (var diff)))
+         (first-part  (car diff)))
     (if (null? first-part)
         '=
-        (cond ((position? first-part)     '>)
+        (cond ((positive? first-part)     '>)
               ((negative? first-part)     '<)
               (else                       '?)))))
 
