@@ -1,0 +1,13 @@
+;; -*- mode: scheme; -*-
+((name            .  "version")
+ (version         .  "0.1")
+ (implementations . ("guile" "2.0.11"))
+ (description     . "version record and manipulate procedures")
+ (source-url      . "https://github.com/scheme-gasket/scm-version.git")
+ (authors         . (
+                     ("Ned Rihine <ned.rihine@gmail.com>")))
+ (support         . (
+                     (bugtracker    . "https://github.com/scheme-gasket/scm-version/issues")
+                     (source        . "https://github.com/scheme-gasket/scm-version")))
+ (provides        . (
+                     (version)        "lib/version.scm")))
